@@ -5,7 +5,6 @@ int numberOfNumber = 0,n;
 
 int main(){
 cin >> n;
-
 int a[n];
 for(int i = 1; i<=n; i++){
     a[i]=i;

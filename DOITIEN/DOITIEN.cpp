@@ -32,3 +32,5 @@ else {
     system("pause");
     return 0;
 }
+/*Thay doi so tien (dau vao) trong file DOITIEN.INP.txt.
+                Made by MinhThanhLe*/
