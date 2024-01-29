@@ -2,29 +2,30 @@
 #include<fstream>
 
 using namespace std;
-int n, tien = 50000, tienCanMuon=0, tienDuKhiChia;
+int n, moneyToBeExchanged = 50000, moneyToBrr=0;
 
 int main(){
 ifstream fileIn;
 ofstream fileOut;
-fileIn.open("DOITIEN.INP",ios_base::in);
-fileOut.open("DOITIEN.OUT",ios_base::out);
+fileIn.open("DOITIEN.INP.txt",ios_base::in);
+fileOut.open("DOITIEN.OUT.txt",ios_base::out);
 fileIn >> n;
-if(n > tien){
-if(n % tien ==0){
-    fileOut << tienCanMuon;
-}
-else{
-tienCanMuon = 50000 -(n % tien) ;
-fileOut << tienCanMuon;
+if(n >= moneyToBeExchanged){
+
+    if(n % moneyToBeExchanged ==0){
+     fileOut << moneyToBrr;
+    }
+
+    else{
+    moneyToBrr = 50000 -(n % moneyToBeExchanged) ;
+    fileOut << moneyToBrr;
+    }
+
 }
 
-
-}
 else {
-    tienCanMuon = tien - n;
-    fileOut << tienCanMuon;
-
+    moneyToBrr = moneyToBeExchanged - n;
+    fileOut << moneyToBrr;
 }
     fileIn.close();
     fileOut.close();
