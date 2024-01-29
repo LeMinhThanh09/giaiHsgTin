@@ -27,3 +27,5 @@ cout<<"So tien phai tra: "<<result<<endl;
 system("pause");  
 return 0;
 }
+/*Thay doi dau vao tu ban phim
+    Made by MinhThanhLe*/
